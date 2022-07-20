@@ -1,17 +1,13 @@
-# Exercism Track Template
+# Exercism Track Elixir
 
-Simple tool to generate basic files for a new track I'm about to start on [Exercism][exercism].
+Hello, I'm Łukasz. 👋
 
-## Dependencies
+I'm a Computer Science (BSc) student at the [WSB Universities](https://wsb.pl/english/). This repository is a collection of solutions submitted to the [Elixir track on Exercism][solutions] which I'm using to learn more.
 
-- Python 3.x
+## Found Issues?
 
-## How to use
+Feel free to open [a new issue][new-issue] and/or [a Pull Request][new-pr], or add comments to my solutions [directly on Exercism][solutions]. Thank you in advance for your help! 💙
 
-1. Clone this template repository.
-1. Install Python.
-1. Run the script via `python scripts/generate.py`.
-
-The above will result in generating _.gitignore_ and _README.md_ files (meaning the current README you're reading will get overwritten). Residues of the template repository can be removed, i.e. Pipfile, the scripts folder.
-
-[exercism]: https://exercism.org
+[new-issue]: https://github.com/lukaszklis/exercism-track-elixir/issues/new
+[new-pr]: https://github.com/lukaszklis/exercism-track-elixir/compare
+[solutions]: https://exercism.org/profiles/lukaszklis/solutions?track_slug=elixir
