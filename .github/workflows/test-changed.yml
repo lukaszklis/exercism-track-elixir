@@ -1,0 +1,26 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-changed:
+    name: Run tests for changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Elixir
+        id: setup-elixir
+        uses: ./
+        with:
+          otp-version: '24.x'
+          elixir-version: '1.13.x'
+      - name: Get changed projects
+        id: changes
+        run: |
+          echo "::set-output name=folders::$(git diff-tree --diff-filter=d --no-commit-id --name-only HEAD~1) | uniq"
+          echo ${{steps.changes.outputs.folders}}
+      - name: Run tests
+        run: |
+          mix deps.get
+          mix test ${{steps.changes.outputs.folders}}
