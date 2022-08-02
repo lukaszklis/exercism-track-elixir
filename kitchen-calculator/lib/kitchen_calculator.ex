@@ -18,12 +18,8 @@ defmodule KitchenCalculator do
   end
 
   defp factor(:milliliter), do: 1
-
   defp factor(:teaspoon), do: 5
-
   defp factor(:tablespoon), do: 15
-
   defp factor(:fluid_ounce), do: 30
-
   defp factor(:cup), do: 240
 end
